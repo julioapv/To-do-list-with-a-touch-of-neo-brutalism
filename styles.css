@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue: #5cbde7;
+    --green: #148914;
+    --red: #F83B3B;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--black);
+    font-family: sans-serif;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23874ae8' fill-opacity='0.32'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.inactive {
+    display: none;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: black 1px solid;
+    box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+    -webkit-box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+    -moz-box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+    background-color: var(--white);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: 1px var(--black) solid;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: var(--white);
+}
+
+#new-task-submit {
+    font-size: 2.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #FF7F00, var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 6px 7px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 6px 7px 0px 0px rgba(0,0,0,1);
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+    transform: scale(1.1) perspective(1px);
+}
+
+#new-task-submit:active {
+    opacity: 0.5;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: var(--white);
+    border: 1px black solid;
+    box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+    -webkit-box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+    -moz-box-shadow: 12px 14px 0px 4px rgba(0,0,0,1);
+}
+main .temp-msg {
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500; 
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #DF4300;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text {
+    color: var(--white);
+    font-size: 1.12rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+#tasks .task .content .text:not(:read-only) {
+    color: violet;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+    transform: perspective(1px);
+}
+
+.task .actions button:active {
+    opacity: 1.5;
+    transform: scale(1.2) perspective(1px)
+}
+
+.task .actions .edit {
+    color: var(--green);
+}
+
+.task .actions .delete {
+    color: var(--red);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: orangered;
+}
